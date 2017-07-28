@@ -9,7 +9,7 @@ var isEqual = function (item) {
     return item == null;
 }
 
-trakt.getMoviesPopularList(function (obj) {
+trakt.getMoviesPopularList(1, 98, function (obj) {
     window.logf = null;
     if (obj instanceof Object) {
         var str = '';

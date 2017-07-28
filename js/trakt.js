@@ -131,8 +131,8 @@ module.exports = {
     //   }
     // }
     // Add pagination, extended info, filters
-    getMoviesPopularList: function (callback) {
-        var url_string = 'movies/popular';
+    getMoviesPopularList: function (page, limit, callback) {
+        var url_string = 'movies/popular' + '?page=' + page + '&limit=' + limit;
         basic_request(url_string, function (obj) {
             // if (obj instanceof Object) {
             //     var str = '';
