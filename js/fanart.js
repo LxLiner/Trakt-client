@@ -10,8 +10,8 @@ var basic_request = function (url_string, callback) {
     }
   }, function (error, response, body) {
     console.log('Status:', response.statusCode);
-    console.log('Headers:', JSON.stringify(response.headers));
-    console.log('Response:', body);
+    //console.log('Headers:', JSON.stringify(response.headers));
+    //console.log('Response:', body);
     if (response.statusCode < 400) {
       callback(JSON.parse(body));
     } else {
