@@ -21,14 +21,15 @@
 
 #application #menu_bar #title_name {
     float: left;
-    /* width: 300px; */
+    width: calc(100% - 200px);
     height: 100%;
     line-height: 30px;
     color: #cccccc;
     font-family: arial;
     font-size: 18px;
     /* font_weight: bold; */
-    padding-left: 10px;
+    padding-left: 100px;
+    text-align: center;
 }
 
 #application #menu_bar #buttons { 
